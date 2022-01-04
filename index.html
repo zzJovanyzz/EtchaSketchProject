@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span id="myContainer">
+
+    </span>
+
+
+
+    <script>
+
+        const myNum = 100;
+        const numSquared = myNum **2;
+
+        function toggleColor(ele){
+            let myId = ele.id; 
+            document.getElementById(myId).style.backgroundColor = "white";
+        }
+        
+        
+            for (let i = 1; i <= (numSquared); i++){
+                if (i % myNum == 0 && i != 0){
+                    document.getElementById("myContainer").appendChild(document.createElement('div'))
+                    document.getElementById("myContainer").appendChild(document.createElement('br'))
+                } else {
+                    document.getElementById("myContainer").appendChild(document.createElement('div'))
+                }
+                
+            }
+
+            for (let x = 0; x <= (numSquared); x++){
+                document.getElementsByTagName("div")[x].setAttribute("id", `div${x}`)
+                document.getElementsByTagName("div")[x].setAttribute("onmouseover", "toggleColor(this)")
+            }
+
+           
+           
+        
+
+    </script>
+</body>
+</html>

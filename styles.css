@@ -1,0 +1,24 @@
+
+
+div {
+    background-color: black;
+    
+    height: 10px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 10px;
+}
+
+
+#myContainer {
+    
+    background-color: cadetblue;
+    display: flex;
+    font-size: 0;
+    height: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    width: 1000px;
+}
