@@ -1,4 +1,4 @@
-Basic Etch-a-Sketch in browser using mostly javascript.
+Basic Etch-a-Sketch in browser using mostly JavaScript.
 
 Visit below for most current version.
 
