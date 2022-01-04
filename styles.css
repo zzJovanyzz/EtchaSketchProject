@@ -45,8 +45,8 @@ div {
     background-color: rgb(255, 255, 255);
     display: flex;
     font-size: 0;
-    height: 600px;
-    width: 600px;
+    height: 1000px;
+    width: 1000px;
     margin: auto;
     margin-top: 10%;
     flex-wrap: wrap ;
