@@ -1,24 +1,55 @@
+a {
+    text-decoration: none;
+    color: black;
+}
 
+body {
+    background-color: rgb(141, 141, 141);
+    text-align: center;
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+    height: 30px;
+    width: 200px;
+}
+
+button:active {
+    background-color: rgb(225, 65, 65);
+}
+
+button:hover{
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+}
 
 div {
-    background-color: black;
+    background-color: white;
     
-    height: 10px;
-    display: inline-block;
-    margin: 0px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: block;
+    margin: 0;
     padding: 0px;
-    width: 10px;
+    
 }
 
 
 #myContainer {
+    border: solid;
+    border-color: rgb(78, 78, 78);
     
-    background-color: cadetblue;
+    border-width: 5px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     font-size: 0;
-    height: 1000px;
+    height: 600px;
+    width: 600px;
     margin: auto;
-    text-align: center;
-    padding-top: 20px;
-    width: 1000px;
+    margin-top: 10%;
+    flex-wrap: wrap ;
+    
+    
 }

@@ -8,41 +8,53 @@
     <title>Document</title>
 </head>
 <body>
-    
     <span id="myContainer">
 
     </span>
-
+    <br>
+    <button id="myButton" onclick="selectGrid()"> Select Grid Size</button>
 
 
     <script>
 
-        const myNum = 100;
-        const numSquared = myNum **2;
+        let myNum = 100;
+        let numSquared = myNum **2;
+
+        createGrid(myNum);
 
         function toggleColor(ele){
             let myId = ele.id; 
-            document.getElementById(myId).style.backgroundColor = "white";
+            document.getElementById(myId).style.backgroundColor = "black";
         }
-        
-        
-            for (let i = 1; i <= (numSquared); i++){
-                if (i % myNum == 0 && i != 0){
-                    document.getElementById("myContainer").appendChild(document.createElement('div'))
-                    document.getElementById("myContainer").appendChild(document.createElement('br'))
-                } else {
-                    document.getElementById("myContainer").appendChild(document.createElement('div'))
-                }
-                
+
+        function createGrid(num){
+            for (let i = 1; i <= (num **2); i++){
+                document.getElementById("myContainer").appendChild(document.createElement('div'))
             }
 
-            for (let x = 0; x <= (numSquared); x++){
+            for (let x = 0; x <= (num **2); x++){
                 document.getElementsByTagName("div")[x].setAttribute("id", `div${x}`)
                 document.getElementsByTagName("div")[x].setAttribute("onmouseover", "toggleColor(this)")
+                document.getElementsByTagName("div")[x].style.height = `${(1 / myNum) * 100}%`;
+                document.getElementsByTagName("div")[x].style.width = `${(1 / myNum) * 100}%`;
             }
+        }
+        
 
+        function removeAllChildNodes(parent) {
+            while (parent.firstChild) {
+                parent.removeChild(parent.firstChild);
+            }
+        }
            
-           
+
+        function selectGrid() {
+            let gridSelection = prompt("Enter a Grid Size:");
+            removeAllChildNodes(document.getElementById("myContainer"))
+            myNum = parseInt(gridSelection);
+            createGrid(myNum);
+               
+        }
         
 
     </script>
