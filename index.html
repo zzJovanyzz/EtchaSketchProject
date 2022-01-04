@@ -35,7 +35,7 @@
             for (let x = 0; x <= (num **2); x++){
                 document.getElementsByTagName("div")[x].setAttribute("id", `div${x}`)
                 document.getElementsByTagName("div")[x].setAttribute("onmouseover", "toggleColor(this)")
-                document.getElementByTagName("div")[x].addEventListener("ontouchmove",toggleColor(this))
+                document.getElementsByTagName("div")[x].setAttribute("ontouchmove","toggleColor(this)")
                 document.getElementsByTagName("div")[x].style.height = `${(1 / myNum) * 100}%`;
                 document.getElementsByTagName("div")[x].style.width = `${(1 / myNum) * 100}%`;
             }
