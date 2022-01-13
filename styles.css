@@ -16,7 +16,7 @@ button {
 }
 
 button:active {
-    background-color: rgb(225, 65, 65);
+    background-color: royalblue;
 }
 
 button:hover{
@@ -45,11 +45,12 @@ div {
     background-color: rgb(255, 255, 255);
     display: flex;
     font-size: 0;
-    height: 900px;
-    width: 900px;
+    height: 600px;
+    width: 600px;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 20px;
     flex-wrap: wrap ;
     
     
 }
+
